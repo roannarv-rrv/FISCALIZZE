@@ -1,51 +1,107 @@
-# ♻️ FISCALIZZE
+<div align="center">
+  <img src="imagens/logo.png" alt="Logo FISCALIZZE" width="90">
 
-### Sistema de Denúncias de Descarte Irregular de Resíduos
+  # ♻️ FISCALIZZE
 
-O **FISCALIZZE** é um projeto acadêmico desenvolvido por estudantes do IFBA - Eunápolis para facilitar o registro e o acompanhamento de denúncias relacionadas ao descarte irregular de resíduos na cidade de **Eunápolis, Bahia**.
+  **Sistema de registro e acompanhamento de denúncias de descarte irregular de resíduos**
 
-O objetivo é incentivar a participação da população na preservação ambiental e contribuir para uma cidade mais limpa e sustentável.
+  Projeto acadêmico de Análise e Desenvolvimento de Sistemas (ADS), voltado à conscientização ambiental em **Eunápolis, Bahia**.
+</div>
 
-##  Objetivo
+![Ilustração de capa do FISCALIZZE](imagens/capa.png)
 
-Criar uma plataforma web simples e acessível que permita registrar ocorrências de descarte irregular de lixo, consultar denúncias e acompanhar indicadores relacionados às ocorrências.
+## 🌱 Sobre o projeto
 
-##  Tecnologias utilizadas
+O **FISCALIZZE** é um protótipo de plataforma web que permite registrar ocorrências de descarte irregular de resíduos, consultar registros e visualizar estatísticas. A proposta é estimular a participação da comunidade na preservação ambiental.
 
-- HTML5 — estrutura das páginas.
-- CSS3 — estilização e responsividade.
-- JavaScript — interatividade e funcionalidades.
-- LocalStorage — armazenamento local das denúncias.
-- Figma — prototipação das interfaces.
-- Git e GitHub — versionamento do projeto.
+## ✨ Funcionalidades
 
-##  Funcionalidades
+- Cadastro de denúncias com tipo, gravidade, descrição e localização.
+- Pré-visualização de imagens selecionadas no formulário.
+- Consulta e filtragem de denúncias por status.
+- Atualização do status das ocorrências.
+- Indicadores de denúncias cadastradas, resolvidas e registradas na semana.
+- Armazenamento local dos registros no navegador com `localStorage`.
 
-- Página inicial de apresentação.
-- Visualização de estatísticas.
-- Cadastro de denúncias de descarte irregular.
-- Informações de localização das ocorrências.
-- Listagem e filtragem das denúncias.
-- Atualização do status das denúncias.
-- Armazenamento de dados no navegador.
+## 🖼️ Protótipos de interface (Figma)
 
-##  Como executar
+As imagens abaixo são **referências de design do Figma**, não capturas da aplicação em execução.
+
+### Página inicial
+![Protótipo da página inicial](docs/prototipos/pagina-inicial.png)
+
+### Estatísticas
+![Protótipo da área de estatísticas](docs/prototipos/estatisticas.png)
+
+### Nova denúncia
+![Protótipo do formulário de denúncia](docs/prototipos/nova-denuncia.png)
+
+### Denúncias
+![Protótipo da listagem de denúncias](docs/prototipos/denuncias.png)
+
+## 🛠️ Tecnologias
+
+- **HTML5:** estrutura da interface.
+- **CSS3:** layout e estilos.
+- **JavaScript:** interações, filtros, cálculos e persistência local.
+- **Figma:** prototipação visual.
+- **Git e GitHub:** versionamento e hospedagem do código.
+
+## 🚀 Como executar
 
 1. Clone o repositório:
 
-   `git clone https://github.com/roannarv-rrv/FISCALIZZE.git`
+   ```bash
+   git clone https://github.com/roannarv-rrv/FISCALIZZE.git
+   ```
 
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Abra o arquivo `index.html` no navegador ou utilize a extensão Live Server.
+2. Abra a pasta `FISCALIZZE` no Visual Studio Code.
+3. Abra o arquivo `index.html` no navegador ou utilize a extensão **Live Server**.
 
-##  Observação
+> **Observação:** nesta versão, as seções são acessadas por navegação interna no `index.html`.
 
-O projeto utiliza **LocalStorage** para armazenar as denúncias. Portanto, os dados são salvos no navegador utilizado e não são compartilhados entre diferentes usuários.
+## 📁 Estrutura do projeto
 
-##  Sobre o projeto
+```text
+FISCALIZZE/
+├── index.html
+├── css/
+│   └── estilo.css
+├── js/
+│   └── script.js
+├── imagens/
+│   ├── capa.png
+│   └── logo.png
+├── docs/
+│   └── prototipos/
+│       ├── pagina-inicial.png
+│       ├── estatisticas.png
+│       ├── nova-denuncia.png
+│       └── denuncias.png
+├── LEIA-ME.txt
+└── README.md
+```
 
-Projeto acadêmico desenvolvido durante o curso de **Análise e Desenvolvimento de Sistemas (ADS)**, com foco na aplicação de conhecimentos de desenvolvimento web, pelos alunos João Henrique, Emanuel, Roanna, Marcio, Ellen e Richard do Segundo Período do ADS2026.
+## ⚠️ Limitações desta versão
+
+- Os dados são salvos no **navegador de cada usuário**; não há banco de dados compartilhado.
+- As fotos podem ser pré-visualizadas, mas **não são armazenadas** junto às denúncias.
+- Os indicadores são calculados a partir dos registros salvos localmente e começam em zero.
+- O projeto é um **protótipo acadêmico** e não representa um canal oficial de atendimento da prefeitura.
+
+## 👥 Integrantes
+
+- **[Nome completo do integrante 1]**
+- **[Nome completo do integrante 2]**
+- **[Nome completo do integrante 3]**
+
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
+**Instituição:** [Nome da instituição]  
+**Disciplina:** [Nome da disciplina]  
+**Professor(a):** [Nome do(a) professor(a)]
 
 ---
 
-**FISCALIZZE — Sua voz por uma cidade mais limpa.** 
+<div align="center">
+  <strong>FISCALIZZE — Sua voz por uma cidade mais limpa. 🌎</strong>
+</div>
