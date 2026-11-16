@@ -1,0 +1,27 @@
+FISCALIZZE - PROJETO HTML, CSS E JAVASCRIPT
+
+COMO ABRIR:
+1. Extraia o ZIP.
+2. Abra a pasta no Visual Studio Code.
+3. Abra index.html no navegador (ou com Live Server).
+
+ARQUIVOS:
+index.html - estrutura das telas
+css/estilo.css - aparência
+js/script.js - funcionalidades
+imagens/capa.png - imagem oficial da página inicial
+imagens/logo.png - logotipo oficial
+
+FUNCIONA:
+- Menu superior na Home e lateral nas páginas internas
+- Cadastro e listagem de denúncias
+- Filtros por status
+- Alteração de status
+- Estatísticas calculadas automaticamente
+- Dados salvos no LocalStorage do navegador
+
+LIMITAÇÕES:
+- Fotos são apenas pré-visualizadas; não ficam armazenadas.
+- Dados ficam no navegador, não são compartilhados entre pessoas.
+- Os números começam em zero, pois são calculados dos registros reais deste navegador.
+- Canais oficiais precisam ser confirmados antes de publicar.

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FISCALIZZE</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <!-- Menu superior da página inicial -->
+  <header id="menu-superior">
+    <button class="marca" onclick="abrirPagina('inicio')" title="Página inicial">
+      <img src="imagens/logo.png" alt="Logo Fiscalizze">
+    </button>
+    <nav>
+      <button onclick="abrirPagina('inicio')">Visão Geral</button>
+      <button onclick="abrirPagina('denuncias')">Denúncias</button>
+      <button onclick="abrirPagina('formulario')">Nova Denúncia</button>
+    </nav>
+  </header>
+
+  <!-- Menu lateral das páginas internas -->
+  <aside id="menu-lateral" class="escondido">
+    <div class="nome-site"><img src="imagens/logo.png" alt=""> FISCALIZZE</div>
+    <p class="legenda-menu">PRINCIPAL</p>
+    <button id="link-inicio" onclick="abrirPagina('inicio')">⌂ Visão Geral</button>
+    <button id="link-formulario" onclick="abrirPagina('formulario')">⊞ Nova Denúncia</button>
+    <button id="link-denuncias" onclick="abrirPagina('denuncias')">⚠ Denúncias</button>
+    <button class="botao-laranja botao-lateral" onclick="abrirPagina('formulario')">+ Registrar Denúncia</button>
+  </aside>
+
+  <!-- HOME: imagem original + estatísticas -->
+  <main id="inicio" class="pagina">
+    <img class="capa" src="imagens/capa.png" alt="Ilustração do Fiscalizze com cidade, natureza e reciclagem">
+    <section class="resumo">
+      <p class="chamada">Registre descartes irregulares de resíduos e ajude a manter<br>Eunápolis limpa. Sua denúncia faz a diferença.</p>
+      <div class="numeros">
+        <div><strong id="numero-total">0</strong><span>Denúncias registradas</span></div>
+        <div><strong id="numero-resolvidas">0</strong><span>Resolvidas</span></div>
+        <div><strong id="numero-semana">0</strong><span>Esta semana</span></div>
+      </div>
+      <h2>Como funciona</h2>
+      <p class="subtexto">Em três passos simples você ajuda a fiscalizar e melhorar sua cidade.</p>
+      <div class="passos">
+        <article><b>1</b><h3>📍 Localize</h3><p>Identifique o ponto de descarte irregular e informe a localização.</p></article>
+        <article><b>2</b><h3>📷 Registre</h3><p>Tire fotos da ocorrência e descreva o que está acontecendo no local.</p></article>
+        <article><b>3</b><h3>✅ Acompanhe</h3><p>Receba um protocolo e acompanhe o status da denúncia.</p></article>
+      </div>
+      <button class="botao-laranja botao-centro" onclick="abrirPagina('formulario')">+ Registrar Denúncia</button>
+    </section>
+  </main>
+
+  <!-- FORMULÁRIO -->
+  <main id="formulario" class="pagina pagina-interna escondido">
+    <h1>⚠ Nova Denúncia</h1>
+    <p class="descricao-pagina">Preencha os campos abaixo para registrar uma denúncia de descarte irregular.</p>
+    <div class="colunas">
+      <form id="form-denuncia">
+        <section class="bloco">
+          <h2>Informações da Ocorrência</h2>
+          <div class="dois-campos">
+            <label>Tipo de Resíduo <em>*</em>
+              <select id="tipo" required>
+                <option value="">Selecione...</option>
+                <option>Descarte de lixo doméstico</option>
+                <option>Entulho de construção</option>
+                <option>Material reciclável acumulado</option>
+                <option>Resíduo industrial</option>
+                <option>Resíduo de poda</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label>Severidade <em>*</em>
+              <select id="severidade" required>
+                <option value="">Selecione...</option>
+                <option>Baixa</option><option>Média</option><option>Alta</option><option>Urgente</option>
+              </select>
+            </label>
+          </div>
+          <label>Descrição detalhada <em>*</em>
+            <textarea id="descricao" minlength="10" rows="6" placeholder="Descreva o que você observou: quantidade aproximada, tipo de material, risco visível..." required></textarea>
+          </label>
+        </section>
+        <section class="bloco">
+          <h2>Localização</h2>
+          <label>Endereço ou Ponto de Referência <em>*</em>
+            <input id="endereco" placeholder="Ex.: Av. Porto Seguro, 510 - próximo ao mercado" required>
+          </label>
+          <div class="dois-campos">
+            <label>Bairro <em>*</em><input id="bairro" placeholder="Ex.: Centro" required></label>
+            <label>Ponto de Referência<input id="referencia" placeholder="Ex.: Próximo à praça"></label>
+          </div>
+          <h2>Evidências</h2>
+          <label class="area-foto" for="fotos">
+            Arraste imagens até aqui ou <u>clique para selecionar</u>
+            <small>Até 4 imagens JPG, PNG ou WEBP (pré-visualização)</small>
+          </label>
+          <input id="fotos" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+          <div id="previas"></div>
+          <div class="acoes">
+            <button type="button" class="botao-cinza" onclick="cancelarCadastro()">Cancelar</button>
+            <button type="submit" class="botao-laranja">Enviar Denúncia →</button>
+          </div>
+        </section>
+      </form>
+      <div class="informacoes">
+        <section class="bloco">
+          <h3>Como sua denúncia é processada</h3>
+          <p><b>1 – Registro:</b> Você recebe um protocolo imediato.</p>
+          <p><b>2 – Análise:</b> A ocorrência passa por avaliação.</p>
+          <p><b>3 – Fiscalização:</b> Encaminhamento aos responsáveis.</p>
+          <p><b>4 – Resolução:</b> Atualização da ocorrência.</p>
+        </section>
+        <section class="bloco">
+          <h3>☎ Canais de Apoio</h3>
+          <p>Para atendimento, consulte os canais oficiais da Prefeitura de Eunápolis.</p>
+        </section>
+        <section class="alerta">
+          <h3>Situação de risco?</h3>
+          <p>Se houver risco imediato à saúde ou ao meio ambiente, acione o serviço público competente.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- LISTAGEM -->
+  <main id="denuncias" class="pagina pagina-interna escondido">
+    <h1>Todas as Denúncias</h1>
+    <p class="descricao-pagina"><span id="quantidade">0</span> ocorrências registradas em Eunápolis, BA</p>
+    <div class="filtros">
+      <button class="selecionado" onclick="filtrar('Todas', this)">Todas (<span id="q-todas">0</span>)</button>
+      <button onclick="filtrar('Urgente', this)">⚠ Urgente (<span id="q-urgente">0</span>)</button>
+      <button onclick="filtrar('Em análise', this)">• Em análise (<span id="q-analise">0</span>)</button>
+      <button onclick="filtrar('Pendente', this)">◌ Pendente (<span id="q-pendente">0</span>)</button>
+      <button onclick="filtrar('Resolvido', this)">✓ Resolvido (<span id="q-resolvido">0</span>)</button>
+    </div>
+    <div id="cards" class="cards"></div>
+    <p id="sem-denuncias" class="vazio">Nenhuma denúncia encontrada. Clique em Nova Denúncia para cadastrar a primeira.</p>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
