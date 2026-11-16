@@ -10,11 +10,11 @@
 
 ![Ilustração de capa do FISCALIZZE](imagens/capa.png)
 
-## 🌱 Sobre o projeto
+##  Sobre o projeto
 
 O **FISCALIZZE** é um protótipo de plataforma web que permite registrar ocorrências de descarte irregular de resíduos, consultar registros e visualizar estatísticas. A proposta é estimular a participação da comunidade na preservação ambiental.
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Cadastro de denúncias com tipo, gravidade, descrição e localização.
 - Pré-visualização de imagens selecionadas no formulário.
@@ -23,7 +23,7 @@ O **FISCALIZZE** é um protótipo de plataforma web que permite registrar ocorr�
 - Indicadores de denúncias cadastradas, resolvidas e registradas na semana.
 - Armazenamento local dos registros no navegador com `localStorage`.
 
-## 🖼️ Protótipos de interface (Figma)
+##  Protótipos de interface (Figma)
 
 As imagens abaixo são **referências de design do Figma**, não capturas da aplicação em execução.
 
@@ -39,7 +39,7 @@ As imagens abaixo são **referências de design do Figma**, não capturas da apl
 ### Denúncias
 ![Protótipo da listagem de denúncias](docs/prototipos/denuncias.png)
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - **HTML5:** estrutura da interface.
 - **CSS3:** layout e estilos.
@@ -47,7 +47,7 @@ As imagens abaixo são **referências de design do Figma**, não capturas da apl
 - **Figma:** prototipação visual.
 - **Git e GitHub:** versionamento e hospedagem do código.
 
-## 🚀 Como executar
+##  Como executar
 
 1. Clone o repositório:
 
@@ -60,7 +60,7 @@ As imagens abaixo são **referências de design do Figma**, não capturas da apl
 
 > **Observação:** nesta versão, as seções são acessadas por navegação interna no `index.html`.
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 ```text
 FISCALIZZE/
@@ -82,23 +82,26 @@ FISCALIZZE/
 └── README.md
 ```
 
-## ⚠️ Limitações desta versão
+##  Limitações desta versão
 
 - Os dados são salvos no **navegador de cada usuário**; não há banco de dados compartilhado.
 - As fotos podem ser pré-visualizadas, mas **não são armazenadas** junto às denúncias.
 - Os indicadores são calculados a partir dos registros salvos localmente e começam em zero.
 - O projeto é um **protótipo acadêmico** e não representa um canal oficial de atendimento da prefeitura.
 
-## 👥 Integrantes
+##  Integrantes
 
-- **[Nome completo do integrante 1]**
-- **[Nome completo do integrante 2]**
-- **[Nome completo do integrante 3]**
+- **Roanna Rodrigues Vieira**
+- **Emanuel Henrique Rosa da Silva**
+- **João Henrique Nonato Gonçalves**
+- **Helen Santos Nascimento**
+- **Marcio Neves Estavam Oliveira**
+- **Richard Villela Aguiar**
 
 **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
-**Instituição:** [Nome da instituição]  
-**Disciplina:** [Nome da disciplina]  
-**Professor(a):** [Nome do(a) professor(a)]
+**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Eunápolis 
+**Disciplina:** Projeto Integrador  
+**Orientador:** Professor Marcos Paranhos
 
 ---
 
