@@ -1,4 +1,3 @@
-// Dados salvos no navegador. Não precisa de banco de dados nesta versão.
 var denuncias = JSON.parse(localStorage.getItem("fiscalizze_denuncias") || "[]");
 var filtroAtual = "Todas";
 
