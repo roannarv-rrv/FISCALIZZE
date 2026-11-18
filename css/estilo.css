@@ -4,7 +4,6 @@ button, input, select, textarea { font-family: inherit; }
 button { cursor: pointer; }
 .escondido { display: none !important; }
 
-/* Página inicial */
 #menu-superior { height: 78px; background: #20513c; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; }
 .marca { background: none; border: 0; padding: 0; }
 .marca img { width: 62px; height: 62px; object-fit: contain; }
@@ -29,7 +28,6 @@ button { cursor: pointer; }
 .botao-laranja:hover { background: #b93e0d; }
 .botao-centro { margin-top: 30px; }
 
-/* Menu das páginas internas */
 #menu-lateral { position: fixed; top: 0; bottom: 0; left: 0; width: 255px; background: #194633; color: #fff; padding: 14px; }
 .nome-site { display: flex; align-items: center; gap: 10px; font-size: 24px; font-weight: bold; padding-bottom: 15px; border-bottom: 1px solid #ffffff45; }
 .nome-site img { width: 55px; height: 55px; object-fit: contain; }
@@ -38,7 +36,6 @@ button { cursor: pointer; }
 #menu-lateral > button.ativo, #menu-lateral > button:not(.botao-laranja):hover { background: #307456; color: white; }
 .botao-lateral { position: absolute; bottom: 18px; left: 14px; width: calc(100% - 28px); }
 
-/* Formulário e listagem */
 .pagina-interna { margin-left: 255px; padding: 28px 3%; min-height: 100vh; }
 .pagina-interna h1 { margin: 5px 0; font-size: 32px; }
 .descricao-pagina { color: #637a70; font-size: 18px; margin: 0 0 22px; }
@@ -77,7 +74,6 @@ textarea { resize: vertical; }
 .card button { background: #e5f2e9; border: 1px solid #9fc8b0; border-radius: 8px; padding: 8px; margin-top: 8px; }
 .vazio { color: #777; text-align: center; margin: 50px 0; }
 
-/* Ajustes para telas menores */
 @media (max-width: 950px) {
   .colunas { grid-template-columns: 1fr; }
   .cards { grid-template-columns: repeat(2, 1fr); }
