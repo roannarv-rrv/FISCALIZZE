@@ -4,9 +4,9 @@ button, input, select, textarea { font-family: inherit; }
 button { cursor: pointer; }
 .escondido { display: none !important; }
 
-#menu-superior { height: 78px; background: #20513c; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; }
+#menu-superior { height: 110px; background: #20513c; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; }
 .marca { background: none; border: 0; padding: 0; }
-.marca img { width: 62px; height: 62px; object-fit: contain; }
+.marca img { width: 90px; height: 90px; object-fit: contain; }
 #menu-superior nav { display: flex; gap: 30px; }
 #menu-superior nav button { border: 0; background: none; color: #fff; font-size: 22px; padding: 12px; }
 #menu-superior nav button:hover { text-decoration: underline; }
@@ -54,7 +54,7 @@ textarea { resize: vertical; }
 .area-foto small { display: block; margin-top: 10px; font-weight: normal; }
 #previas { display: flex; gap: 8px; flex-wrap: wrap; }
 #previas img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; }
-.acoes { display: flex; justify-content: flex-end; gap: 10px; }
+.acoes { display: flex; justify-content: flex-end; gap: 10px;  margin-top: 25px; }
 .botao-cinza { background: #f5f5f5; color: #555; border: 1px solid #ddd; padding: 12px 25px; border-radius: 8px; }
 .alerta { background: #ffebe2; border: 1px solid #e65d26; border-radius: 16px; padding: 20px; color: #9b3021; }
 .alerta h3 { margin: 0 0 10px; }
@@ -83,7 +83,7 @@ textarea { resize: vertical; }
 }
 @media (max-width: 650px) {
   #menu-superior { height: auto; padding: 8px; }
-  .marca img { width: 43px; height: 43px; }
+  .marca img { width: 60px; height: 60px; }
   #menu-superior nav { gap: 0; }
   #menu-superior nav button { font-size: 12px; padding: 8px; }
   .chamada { font-size: 17px; }
