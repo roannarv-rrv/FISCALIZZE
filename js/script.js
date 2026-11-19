@@ -99,7 +99,6 @@ function cancelarCadastro() {
   abrirPagina("inicio");
 }
 
-// As fotos são mostradas antes do envio, mas ainda não ficam salvas.
 document.getElementById("fotos").addEventListener("change", function() {
   var arquivos = this.files;
   var area = document.getElementById("previas");
