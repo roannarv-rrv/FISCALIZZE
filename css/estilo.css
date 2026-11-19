@@ -4,7 +4,7 @@ button, input, select, textarea { font-family: inherit; }
 button { cursor: pointer; }
 .escondido { display: none !important; }
 
-#menu-superior { height: 110px; background: #20513c; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; }
+#menu-superior { height: 80px; background: #20513c; display: flex; justify-content: space-between; align-items: center; padding: 0 3%; }
 .marca { background: none; border: 0; padding: 0; }
 .marca img { width: 90px; height: 90px; object-fit: contain; }
 #menu-superior nav { display: flex; gap: 30px; }
